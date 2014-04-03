@@ -17,7 +17,6 @@ private:
     
 public:
     String();
-    String(long);
     String(char*);
     
     void setTo(char*);

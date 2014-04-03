@@ -15,19 +15,6 @@ String::String()
     length = 0;
 }
 
-String::String(long n)
-{
-    if (n < 0) {
-        n = NULL;
-        length = 0;
-        return;
-    }
-    s = new char[length = n + 1];
-    for (int i = 0; i < length; i++) {
-        s[i] = 0;
-    }
-}
-
 String::String(char* s) : String()
 {
     setTo(s);
@@ -50,22 +37,18 @@ void String::setTo(char * s)
     }
     
     if (this->s) {
-        if (inputLength < length) {
-            // ok just clear and reuse
-            for (int i = 0; i < length; i++) {
-                this->s[i] = 0;
-            }
-        } else { // it means there's not enough space to contains new string
-            // you have to reallocate
-            delete [] this->s;
-            this->s = NULL;
-            length = inputLength + 1; // length will be the size we gonna have to allocate to this->s to contain enough the inputstring ==> total length = inputstring's length + 1 for null-terminated character
-            this->s = new char[length];
-        }
-    } else { // allocate
-        length = inputLength + 1; // length will be the size we gonna have to allocate to this->s to contain enough the inputstring ==> total length = inputstring's length + 1 for null-terminated character
-        this->s = new char[length];
+        // you have to reallocate
+        delete [] this->s;
+        this->s = NULL;
+        length = 0;
     }
+    
+    if (inputLength < 0) {
+        return;
+    }
+    
+    length = inputLength + 1; // length will be the size we gonna have to allocate to this->s to contain enough the inputstring ==> total length = inputstring's length + 1 for null-terminated character
+    this->s = new char[length];
     
     for (int i = 0; i < inputLength; i++) {
         this->s[i] = s[i];
