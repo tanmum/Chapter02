@@ -22,11 +22,9 @@ public:
     
     void setTo(char*);
     char* getStr();
-    long ln();
-    void clear();
     
 private:
-    void create(long);
+    
 };
 
 #endif

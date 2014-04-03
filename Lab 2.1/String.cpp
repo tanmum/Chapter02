@@ -22,7 +22,10 @@ String::String(long n)
         length = 0;
         return;
     }
-    create(n);
+    s = new char[length = n + 1];
+    for (int i = 0; i < length; i++) {
+        s[i] = 0;
+    }
 }
 
 String::String(char* s) : String()
@@ -49,7 +52,9 @@ void String::setTo(char * s)
     if (this->s) {
         if (inputLength < length) {
             // ok just clear and reuse
-            clear();
+            for (int i = 0; i < length; i++) {
+                this->s[i] = 0;
+            }
         } else { // it means there's not enough space to contains new string
             // you have to reallocate
             delete [] this->s;
@@ -68,27 +73,5 @@ void String::setTo(char * s)
     this->s[inputLength] = 0;
 }
 
-long String::ln()
-{
-    char* p = s;
-    for (; *p++;);
-    return p - s;
-}
 
-void String::clear()
-{
-    if (!s) return;
-    for (int i = 0; i < length; i++) {
-        s[i] = 0;
-    }
-}
 
-// CAREFUL: this->s should be NULL before calling
-// CAREFUL: n must gte 0
-void String::create(long n)
-{
-    s = new char[length = n + 1];
-    for (int i = 0; i < length; i++) {
-        s[i] = 0;
-    }
-}

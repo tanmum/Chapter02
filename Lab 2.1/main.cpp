@@ -12,8 +12,9 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    String s(10);
+    String s("Hello");
     s.setTo("Hello every body in the world!");
+    s.setTo("Hello every body!");
     cout<<s.getStr()<<endl;
     
     //std::cin.ignore();
