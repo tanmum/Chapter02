@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F680BD5418EBCB4000B2131B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD5318EBCB4000B2131B /* main.cpp */; };
 		F680BD5618EBCB4000B2131B /* Lab_2_1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F680BD5518EBCB4000B2131B /* Lab_2_1.1 */; };
-		F680BD5E18EBCCC600B2131B /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD5D18EBCCC600B2131B /* customer.cpp */; };
 		F680BD6118EBEA9A00B2131B /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD6018EBEA9A00B2131B /* String.cpp */; };
+		F680BD6418ED288200B2131B /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD6318ED288200B2131B /* Customer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,10 +30,10 @@
 		F680BD5018EBCB4000B2131B /* Chapter02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter02; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680BD5318EBCB4000B2131B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F680BD5518EBCB4000B2131B /* Lab_2_1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab_2_1.1; sourceTree = "<group>"; };
-		F680BD5C18EBCBB100B2131B /* customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
-		F680BD5D18EBCCC600B2131B /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = customer.cpp; sourceTree = "<group>"; };
-		F680BD5F18EBEA2900B2131B /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = String.h; path = ../String.h; sourceTree = "<group>"; };
-		F680BD6018EBEA9A00B2131B /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = String.cpp; path = ../String.cpp; sourceTree = "<group>"; };
+		F680BD5F18EBEA2900B2131B /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
+		F680BD6018EBEA9A00B2131B /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
+		F680BD6218ED279000B2131B /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		F680BD6318ED288200B2131B /* Customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				F680BD6018EBEA9A00B2131B /* String.cpp */,
 				F680BD5318EBCB4000B2131B /* main.cpp */,
 				F680BD5518EBCB4000B2131B /* Lab_2_1.1 */,
-				F680BD5C18EBCBB100B2131B /* customer.h */,
-				F680BD5D18EBCCC600B2131B /* customer.cpp */,
+				F680BD6218ED279000B2131B /* Customer.h */,
+				F680BD6318ED288200B2131B /* Customer.cpp */,
 			);
 			name = Chapter02;
 			path = "Lab 2.1";
@@ -130,7 +130,7 @@
 			files = (
 				F680BD5418EBCB4000B2131B /* main.cpp in Sources */,
 				F680BD6118EBEA9A00B2131B /* String.cpp in Sources */,
-				F680BD5E18EBCCC600B2131B /* customer.cpp in Sources */,
+				F680BD6418ED288200B2131B /* Customer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #ifndef Lab_2_1_String_h
 #define Lab_2_1_String_h
+#include <iostream>
 
 class String
 {
@@ -24,6 +25,7 @@ public:
     char* getStr();
     long ln();
     void clear();
+    void prt(std::ostream& f);
     
 private:
     void create(long);
