@@ -13,9 +13,8 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    Customer odc("ODC", "", "515-779-5434","515-799-5432");
-    //odc.setFax("nothing at all");
-    odc.showCard();
+    String s1("TanBui");
+    s1.setTo("TanHaiBui");
     //std::cin.ignore();
     return 0;
 }

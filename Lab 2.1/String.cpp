@@ -88,6 +88,20 @@ void String::prt(std::ostream& f)
     f << this->s;
 }
 
+String::~String()
+{
+    if (s) {
+        std::cout << s << std::endl;
+    } else {
+        std::cout << "<empty>\n";
+    }
+    
+    delete [] s;
+    s = NULL;
+    length = 0;
+}
+
+
 // CAREFUL: this->s should be NULL before calling
 // CAREFUL: n must gte 0
 void String::create(long n)

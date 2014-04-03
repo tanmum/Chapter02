@@ -27,6 +27,8 @@ public:
     void clear();
     void prt(std::ostream& f);
     
+    ~String();
+    
 private:
     void create(long);
 };
