@@ -15,11 +15,6 @@ String::String()
     length = 0;
 }
 
-String::String(char* s) : String()
-{
-    setTo(s);
-}
-
 char* String::getStr()
 {
     return s;
