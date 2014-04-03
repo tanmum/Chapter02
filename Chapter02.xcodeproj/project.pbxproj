@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F680BD5418EBCB4000B2131B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD5318EBCB4000B2131B /* main.cpp */; };
 		F680BD5618EBCB4000B2131B /* Lab_2_1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F680BD5518EBCB4000B2131B /* Lab_2_1.1 */; };
+		F680BD5E18EBCCC600B2131B /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD5D18EBCCC600B2131B /* customer.cpp */; };
+		F680BD6118EBEA9A00B2131B /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD6018EBEA9A00B2131B /* String.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F680BD5018EBCB4000B2131B /* Lab 2.1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 2.1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F680BD5018EBCB4000B2131B /* Chapter02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter02; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680BD5318EBCB4000B2131B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F680BD5518EBCB4000B2131B /* Lab_2_1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab_2_1.1; sourceTree = "<group>"; };
+		F680BD5C18EBCBB100B2131B /* customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
+		F680BD5D18EBCCC600B2131B /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = customer.cpp; sourceTree = "<group>"; };
+		F680BD5F18EBEA2900B2131B /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = String.h; path = ../String.h; sourceTree = "<group>"; };
+		F680BD6018EBEA9A00B2131B /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = String.cpp; path = ../String.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,7 @@
 		F680BD4718EBCB4000B2131B = {
 			isa = PBXGroup;
 			children = (
-				F680BD5218EBCB4000B2131B /* Lab 2.1 */,
+				F680BD5218EBCB4000B2131B /* Chapter02 */,
 				F680BD5118EBCB4000B2131B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,26 +58,31 @@
 		F680BD5118EBCB4000B2131B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F680BD5018EBCB4000B2131B /* Lab 2.1 */,
+				F680BD5018EBCB4000B2131B /* Chapter02 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F680BD5218EBCB4000B2131B /* Lab 2.1 */ = {
+		F680BD5218EBCB4000B2131B /* Chapter02 */ = {
 			isa = PBXGroup;
 			children = (
+				F680BD5F18EBEA2900B2131B /* String.h */,
+				F680BD6018EBEA9A00B2131B /* String.cpp */,
 				F680BD5318EBCB4000B2131B /* main.cpp */,
 				F680BD5518EBCB4000B2131B /* Lab_2_1.1 */,
+				F680BD5C18EBCBB100B2131B /* customer.h */,
+				F680BD5D18EBCCC600B2131B /* customer.cpp */,
 			);
+			name = Chapter02;
 			path = "Lab 2.1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F680BD4F18EBCB4000B2131B /* Lab 2.1 */ = {
+		F680BD4F18EBCB4000B2131B /* Chapter02 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F680BD5918EBCB4000B2131B /* Build configuration list for PBXNativeTarget "Lab 2.1" */;
+			buildConfigurationList = F680BD5918EBCB4000B2131B /* Build configuration list for PBXNativeTarget "Chapter02" */;
 			buildPhases = (
 				F680BD4C18EBCB4000B2131B /* Sources */,
 				F680BD4D18EBCB4000B2131B /* Frameworks */,
@@ -81,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = "Lab 2.1";
+			name = Chapter02;
 			productName = "Lab 2.1";
-			productReference = F680BD5018EBCB4000B2131B /* Lab 2.1 */;
+			productReference = F680BD5018EBCB4000B2131B /* Chapter02 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +106,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = tanbui;
 			};
-			buildConfigurationList = F680BD4B18EBCB4000B2131B /* Build configuration list for PBXProject "Lab 2.1" */;
+			buildConfigurationList = F680BD4B18EBCB4000B2131B /* Build configuration list for PBXProject "Chapter02" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F680BD4F18EBCB4000B2131B /* Lab 2.1 */,
+				F680BD4F18EBCB4000B2131B /* Chapter02 */,
 			);
 		};
 /* End PBXProject section */
@@ -118,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F680BD5418EBCB4000B2131B /* main.cpp in Sources */,
+				F680BD6118EBEA9A00B2131B /* String.cpp in Sources */,
+				F680BD5E18EBCCC600B2131B /* customer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,21 +210,23 @@
 		F680BD5A18EBCB4000B2131B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CURRENT_PROJECT_VERSION = "";
+				PRODUCT_NAME = Chapter02;
 			};
 			name = Debug;
 		};
 		F680BD5B18EBCB4000B2131B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CURRENT_PROJECT_VERSION = "";
+				PRODUCT_NAME = Chapter02;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F680BD4B18EBCB4000B2131B /* Build configuration list for PBXProject "Lab 2.1" */ = {
+		F680BD4B18EBCB4000B2131B /* Build configuration list for PBXProject "Chapter02" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F680BD5718EBCB4000B2131B /* Debug */,
@@ -220,13 +235,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F680BD5918EBCB4000B2131B /* Build configuration list for PBXNativeTarget "Lab 2.1" */ = {
+		F680BD5918EBCB4000B2131B /* Build configuration list for PBXNativeTarget "Chapter02" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F680BD5A18EBCB4000B2131B /* Debug */,
 				F680BD5B18EBCB4000B2131B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
