@@ -52,11 +52,14 @@ void String::setTo(char * s)
             clear();
         } else { // it means there's not enough space to contains new string
             // you have to reallocate
-            delete [] s;
-            s = NULL;
+            delete [] this->s;
+            this->s = NULL;
             length = inputLength + 1; // length will be the size we gonna have to allocate to this->s to contain enough the inputstring ==> total length = inputstring's length + 1 for null-terminated character
             this->s = new char[length];
         }
+    } else { // allocate
+        length = inputLength + 1; // length will be the size we gonna have to allocate to this->s to contain enough the inputstring ==> total length = inputstring's length + 1 for null-terminated character
+        this->s = new char[length];
     }
     
     for (int i = 0; i < inputLength; i++) {
