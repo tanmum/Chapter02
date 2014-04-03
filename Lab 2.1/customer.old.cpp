@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "customer.h"
+#include "customer.old.h"
 
 char* Customer::setString(char *to, char *from, int length)
 {
